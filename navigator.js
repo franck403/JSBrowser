@@ -17,7 +17,7 @@ requestor.requestFullscreen();
 document.getElementById("fullscreen").src = "icon/button/carre.png"
 
 function fullscreen() {
-    if (document.fullscreenEnabled) {
+    if (!document.fullscreenEnabled) {
         document.getElementById("fullscreen").src = "icon/button/carre.png"
         requestor.requestFullscreen();
     } else {
