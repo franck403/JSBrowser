@@ -4,7 +4,7 @@ searchbar.addEventListener("keyup", function(event) {
         // Do work
     }
 });
-const requestor = document.querySelector("#container");
+const requestor = document.getElementsByTagName("body")[0];
 
 function handleError(event) {
     document.getElementById("fullscreen").src = "icon/button/2carre.png"
