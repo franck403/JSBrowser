@@ -112,4 +112,5 @@ input[type=text] {
 }
 .tabs {
   height:25px;
+  display: flex;
 }
