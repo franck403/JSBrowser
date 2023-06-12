@@ -75,7 +75,7 @@ input[type=text] {
 
 .content iframe {
   border: none;
-  height: calc(100vh - 47px);
+  height: calc(100vh - 97px);
   width: 100vw;
 }
 
@@ -94,4 +94,8 @@ input[type=text] {
 }
 .tabs .div {
   border-radius: 30px 30px 0px 0px;
+}
+
+.tabs {
+  height:50px;
 }
