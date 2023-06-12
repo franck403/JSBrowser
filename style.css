@@ -100,7 +100,8 @@ input[type=text] {
 }
 
 .tabs .command img{
-  height: 45px;
+  height: 21px;
+  width: 21px;
 }
 .tabs {
   height:50px;
