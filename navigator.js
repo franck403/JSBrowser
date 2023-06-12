@@ -26,5 +26,6 @@ document.getElementById("fullscreen").src = "icon/button/carre.png"
 
 function fullscreen() {
     requestor.requestFullscreen();
+    afullscreen()
     document.getElementById("fullscreen").src = "icon/button/carre.png"
 }
