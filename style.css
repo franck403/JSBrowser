@@ -52,8 +52,8 @@ body {
 /* Three dots */
 .dot {
   margin-top: 4px;
-  height: 12px;
-  width: 12px;
+  height: 14px;
+  width: 14px;
   display: inline-block;
 }
 
@@ -86,7 +86,7 @@ input[type=text] {
 
 .content iframe {
   border: none;
-  height: calc(100vh - 46px);
+  height: calc(100vh - 47px);
   width: 100vw;
 }
 
