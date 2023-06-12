@@ -96,7 +96,7 @@ input[type=text] {
   border-radius: 30px 30px 0px 0px;
 }
 .tabs .command {
-  height: 45px;
+  height:25px;
 }
 
 .tabs .command img{
@@ -104,5 +104,5 @@ input[type=text] {
   width: 21px;
 }
 .tabs {
-  height:50px;
+  height:25px;
 }
