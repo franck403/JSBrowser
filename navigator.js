@@ -25,3 +25,22 @@ function fullscreen() {
         document.exitFullscreen();
     }
 }
+
+function reset_tab() {
+    document.getElementById("nb" + id).value = "New tab"
+    document.getElementById("b" + id).src = ""
+}
+
+function close_tab(id) {
+    document.getElementById(id).remove()
+    document.getElementById("b" + id).remove()
+}
+function new_tab() {
+    var id = Math.random()
+    var template = `<div id="b${id}"><button>New tab</button><img src="icon/button/traverser.png" id="nb${id}" onclick="close_tab(b${id})" class="dot"></div>` 
+    var iframe = `<iframe id="bb${id}"></iframe>`
+    var before = document.getElementById("tabs").innerHTML
+    document.getElementById("tabs").innerHTML = before + template
+    var before = document.getElementById("iframe").innerHTML
+    document.getElementById("tabs").innerHTML = before + template
+}

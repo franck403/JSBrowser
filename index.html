@@ -9,9 +9,14 @@
 <body>
   <div class="container" id="container">
     <div class="tabs">
-      <div></div>
+      <div id="tabs">
+        <div>
+          <button>New tab</button>
+          <img src="icon/button/traverser.png" onclick="reset_tab()" class="dot">
+        </div>
+      </div>
       <div class="command">
-        <img src="icon/button/traverser.png" class="dot">
+        <img src="icon/button/plus.png" onclick="new_tab()" class="dot">
       </div>
     </div>
     <div class="bar">
@@ -27,8 +32,8 @@
       </div>
     </div>
 
-    <div class="content">
-      <iframe src="https://roaring-griffin-499a65.netlify.app/search"></iframe>
+    <div id="iframe" class="content">
+      <iframe id="bb0.329087432047039243242432432" src="https://roaring-griffin-499a65.netlify.app/search"></iframe>
     </div>
   </div>
   <script src="navigator.js"></script>
