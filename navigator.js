@@ -4,3 +4,15 @@ searchbar.addEventListener("keyup", function(event) {
         // Do work
     }
 });
+const requestor = document.querySelector("#fullscreen");
+
+function handleError(event) {
+    document.getElementById("fullscreen").src = "icon/button/2carre.png"
+}
+
+document.addEventListener("fullscreenerror", handleError);
+// or
+document.onfullscreenerror = handleError;
+
+requestor.requestFullscreen();
+document.getElementById("fullscreen").src = "icon/button/carre.png"
