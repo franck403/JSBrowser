@@ -1,7 +1,8 @@
 var searchbar = document.getElementById("searchbar1")
 searchbar.addEventListener("keyup", function(event) {
     if (event.key === "Enter") {
-        // Do work
+        var research = document.getElementById("searchbar1").value
+        var reg = "https://"
     }
 });
 const requestor = document.getElementsByTagName("body")[0];
