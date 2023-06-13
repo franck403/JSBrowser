@@ -129,8 +129,8 @@ input[type=text] {
 
 #load img {
   position: fixed;
-  top: 20%;
-  left: 25%;
+  top: 15%;
+  left: 30%;
   z-index: 1;
   background: black;
   width: 40%;
@@ -140,10 +140,11 @@ input[type=text] {
 
 #load h1 {
   position: fixed;
-  top: 30%;
+  top: 80%;
   color: white;
-  left: 25%;
+  left: 30%;
   z-index: 1;
+  text-align: center;
   background: black;
   width: 40%;
   height: auto;
