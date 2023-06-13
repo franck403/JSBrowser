@@ -28,7 +28,7 @@ function fullscreen() {
 }
 
 function reset_tab(id) {
-    document.getElementById("tt" + id).value = "New tab"
+    document.getElementById("tt" + id).innerHTML = "New tab"
     var s = document.getElementById("" + id).src
     document.getElementById("b" + id).src = ""
     document.getElementById("b" + id).src = s

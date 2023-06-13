@@ -5,4 +5,4 @@ const url = urlParams.get('url')
 
 const id = urlParams.get('id')
 
-parent.document.getElementById("tt" + id).value="loaded";
+parent.document.getElementById("tt" + id).innerHTML = "loaded";
