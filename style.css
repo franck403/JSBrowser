@@ -31,11 +31,11 @@ body {
 }
 
 .left {
-  width: 4%;
+  width: 5%;
 }
 
 .middle {
-  width: 96%;
+  width: 94%;
 }
 
 /* Clear floats after the columns */
@@ -93,13 +93,16 @@ input[type=text] {
   }
 }
 .tabs div div {
-  border-radius: 30px 30px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
   background: gray;
+  width: fit-content;
+  height: 25px;
 }
 
 .tabs div div button{
   border:none;
   background: none;
+  margin:calc(25px / 5);
 }
 
 .tabs .command {
@@ -112,5 +115,15 @@ input[type=text] {
 }
 .tabs {
   height:25px;
+  display: flex;
+}
+
+.tabs div div img{
+  margin-top:calc(25px / 5);
+  height: 10px;
+  width: 10px;
+}
+
+#tabs {
   display: flex;
 }
