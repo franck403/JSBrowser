@@ -4,3 +4,5 @@ const urlParams = new URLSearchParams(queryString);
 const url = urlParams.get('url')
 
 const id = urlParams.get('id')
+
+parent.document.getElementById(id).value="loaded";
