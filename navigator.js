@@ -27,12 +27,13 @@ function fullscreen() {
     }
 }
 
-function reset_tab() {
+function reset_tab(id) {
     document.getElementById("n" + id).value = "New tab"
     document.getElementById("b" + id).src = ""
 }
 
 function close_tab(id) {
+    console.log(id)
     document.getElementById(id).remove()
     document.getElementById("b" + id).remove()
 }
