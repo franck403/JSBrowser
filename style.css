@@ -125,10 +125,13 @@ input[type=text] {
 }
 #load img{
   position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1;
   background:black;
   width: 40%;
-  height: 40%;
+  height: auto;
   animation: loding 850ms ease 0s infinite normal forwards;
 }
 
