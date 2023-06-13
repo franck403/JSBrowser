@@ -47,6 +47,7 @@ function new_tab() {
     document.getElementById("tabs").innerHTML = before + template
     var before = document.getElementById("iframe").innerHTML
     document.getElementById("iframe").innerHTML = before + iframe
+    document.getElementById("bb" + id).classList.add('active');
 }
 
 function select_tab(id) {
