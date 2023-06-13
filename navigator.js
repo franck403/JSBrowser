@@ -28,20 +28,19 @@ function fullscreen() {
 }
 
 function reset_tab(id) {
-    document.getElementById(id).value = "New tab"
-    var s = document.getElementById(id).src
+    document.getElementById("tt" + id).value = "New tab"
+    var s = document.getElementById("" + id).src
     document.getElementById("b" + id).src = ""
     document.getElementById("b" + id).src = s
 }
 
 function close_tab(id) {
-    console.log(id)
     document.getElementById(id).remove()
     document.getElementById("b" + id).remove()
 }
 function new_tab() {
     var id = String(Math.random()).split(".")[1]
-    var template = `<div id="b${id}" onclick="select_tab('b${id}')"><button>New tab</button><img src="icon/button/traverser.png" id="nb${id}" onclick="close_tab('b${id}')"></div>` 
+    var template = `<div id="b${id}" onclick="select_tab('b${id}')"><button id="tt${id}">New tab</button><img src="icon/button/traverser.png" id="nb${id}" onclick="close_tab('b${id}')"></div>` 
     var iframe = `<iframe id="bb${id}"></iframe>`
     var before = document.getElementById("tabs").innerHTML
     document.getElementById("tabs").innerHTML = before + template
