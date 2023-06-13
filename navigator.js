@@ -34,7 +34,6 @@ function reset_tab(id) {
 
 function close_tab(id) {
     console.log(id)
-    var id = id.id
     document.getElementById(id).remove()
     document.getElementById("b" + id).remove()
 }
