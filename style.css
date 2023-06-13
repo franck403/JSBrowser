@@ -69,13 +69,14 @@ input[type=text] {
 /* Page content */
 .content {
   padding: 0px;
+  position: fixed;
   width: 100%;
   background: white;
 }
 
 .content iframe {
   border: none;
-  height: calc(100vh - 97px);
+  height: calc(100vh - 72px);
   width: 100vw;
 }
 
