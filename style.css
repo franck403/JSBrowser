@@ -74,11 +74,13 @@ input[type=text] {
   border: none;
   height: calc(100vh - 72px);
   width: 100vw;
-  z-index:1;
+  z-index: 1;
 }
+
 .content .active {
-  z-index:2;
+  z-index: 2;
 }
+
 .tabs div div {
   border-radius: 10px 10px 0px 0px;
   background: gray;
@@ -86,27 +88,28 @@ input[type=text] {
   height: 25px;
 }
 
-.tabs div div button{
-  border:none;
+.tabs div div button {
+  border: none;
   background: none;
-  margin:calc(25px / 5);
+  margin: calc(25px / 5);
 }
 
 .tabs .command {
-  height:25px;
+  height: 25px;
 }
 
-.tabs .command img{
+.tabs .command img {
   height: 21px;
   width: 21px;
 }
+
 .tabs {
-  height:25px;
+  height: 25px;
   display: flex;
 }
 
-.tabs div div img{
-  margin-top:calc(25px / 5);
+.tabs div div img {
+  margin-top: calc(25px / 5);
   height: 10px;
   width: 10px;
 }
@@ -119,28 +122,29 @@ input[type=text] {
 #load {
   position: fixed;
   z-index: 1;
-  background:black;
+  background: black;
   width: 100%;
   height: 100%;
 }
-#load img{
+
+#load img {
   position: fixed;
   top: 20%;
   left: 25%;
   z-index: 1;
-  background:black;
+  background: black;
   width: 40%;
   height: auto;
-  animation: loding 850ms ease 0s infinite normal forwards;
+  animation: loding 850ms cubic-bezier(0.31, 0.16, 0.04, 1.16) 0s infinite normal forwards;
 }
 
-#load h1{
+#load h1 {
   position: fixed;
   top: 30%;
-  color:white;
+  color: white;
   left: 25%;
   z-index: 1;
-  background:black;
+  background: black;
   width: 40%;
   height: auto;
 }
