@@ -28,8 +28,10 @@ function fullscreen() {
 }
 
 function reset_tab(id) {
-    document.getElementById("n" + id).value = "New tab"
+    document.getElementById(id).value = "New tab"
+    var s = document.getElementById(id).src
     document.getElementById("b" + id).src = ""
+    document.getElementById("b" + id).src = s
 }
 
 function close_tab(id) {
