@@ -5,4 +5,8 @@ const url = urlParams.get('url')
 
 const id = urlParams.get('id')
 
-parent.document.getElementById("tt" + id).innerHTML = "new tab";
+if (url == "https://roaring-griffin-499a65.netlify.app/search") {
+    parent.document.getElementById("tt" + id).innerHTML = "new tab";
+} else {
+    parent.document.getElementById("tt" + id).innerHTML = "loading tab";
+}
