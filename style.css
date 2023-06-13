@@ -134,6 +134,16 @@ input[type=text] {
   animation: loding 850ms ease 0s infinite normal forwards;
 }
 
+#load h1{
+  position: fixed;
+  top: 30%;
+  color:white;
+  left: 25%;
+  z-index: 1;
+  background:black;
+  width: 40%;
+  height: auto;
+}
 
 @keyframes loding {
   0% {
