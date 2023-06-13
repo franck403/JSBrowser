@@ -38,6 +38,8 @@ function close_tab(id) {
 }
 function new_tab() {
     var id = Math.random()
+    var id = id.split(".")
+    var id = id[1]
     var template = `<div id="b${id}" onclick="select_tab(b${id})"><button>New tab</button><img src="icon/button/traverser.png" id="nb${id}" onclick="close_tab(b${id})"></div>` 
     var iframe = `<iframe id="bb${id}"></iframe>`
     var before = document.getElementById("tabs").innerHTML
